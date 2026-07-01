@@ -1,0 +1,59 @@
+{
+  "name": "vite-plugin-resource-waste",
+  "version": "1.2.6",
+  "description": "基于 Vite 的前端构建资源浪费分析插件，利用 Module Graph 检测未使用 JS、不可达组件、缓存失效与重复依赖，量化传输/解析开销并输出可执行优化报告，支持 CI 构建阈值拦截",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "build:debug": "tsup --sourcemap",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "release": "npm run build && npm publish",
+    "release:patch": "npm version patch && npm run release",
+    "release:minor": "npm version minor && npm run release",
+    "release:major": "npm version major && npm run release"
+  },
+  "keywords": [
+    "vite-plugin",
+    "vite",
+    "资源浪费",
+    "resource-waste",
+    "vite-plugin-resource-waste",
+    "资源浪费分析",
+    "bundle-waste",
+    "tree-shaking",
+    "dead-code",
+    "前端性能优化",
+    "构建分析报告",
+    "包体积优化",
+    "无效资源检测"
+  ],
+  "peerDependencies": {
+    "vite": ">=4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
+  },
+  "author": "lebron_shi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shilimingY/vite-plugin-resource-waste.git"
+  },
+  "sideEffects": false
+}
