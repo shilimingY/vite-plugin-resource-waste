@@ -15,7 +15,7 @@ const CAT: Record<string, string> = {
 
 const SEV: Record<string, string> = { high: '高', medium: '中', low: '低' }
 
-/** 极简 HTML 壳（无 CSS 变量，体积更小） */
+/** 极简 HTML 壳 */
 const SHELL =
   '<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"/>' +
   '<meta name="viewport" content="width=device-width,initial-scale=1"/>' +

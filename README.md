@@ -287,4 +287,8 @@ visualizer 回答「bundle 长什么样」；本插件回答「**哪些资源白
 不会。所有分析在**构建期**完成，不注入任何运行时代码到产物中。
 
 ---
+---
 
+**如果这个插件对你有帮助，欢迎给个 [⭐ Star](https://github.com/shilimingY/vite-plugin-resource-waste) 哦~**
+
+[GitHub](https://github.com/shilimingY/vite-plugin-resource-waste) • [Issues](https://github.com/shilimingY/vite-plugin-resource-waste/issues)
